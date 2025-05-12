@@ -1,0 +1,47 @@
+# 启用GZIP压缩
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+</IfModule>
+
+# 设置缓存控制
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # 图片文件缓存1年
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS和JavaScript文件缓存1个月
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # HTML和数据文件缓存1小时
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType application/json "access plus 1 hour"
+</IfModule>
+
+# 添加安全头
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # 开启CORS
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# 优化静态资源
+<FilesMatch ".(jpg|jpeg|png|gif|webp|ico|js|css|pdf)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# 强制HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]

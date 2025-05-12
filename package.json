@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "script.js",
+  "scripts": {
+    "minify:css": "npx cleancss -o styles.min.css styles.css && npx cleancss -o styles01.min.css styles01.css",
+    "minify:js": "npx terser script.js -o script.min.js",
+    "build": "npm run minify:css && npm run minify:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SisiGuo04/myworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SisiGuo04/myworks/issues"
+  },
+  "homepage": "https://github.com/SisiGuo04/myworks#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.16.1"
+  }
+}
