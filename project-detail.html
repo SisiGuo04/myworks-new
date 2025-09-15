@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">项目详情 - 郭思思</title>
+    <meta name="description" content="项目详细介绍页面">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://myworks.guosisi.top/images/logo.ico" type="image/ico">
+    <link rel="alternate icon" href="logo.ico" type="image/ico">
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="navigation">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>返回首页</span>
+            </a>
+        </nav>
+        
+        <!-- 项目详情内容 -->
+        <main class="project-detail">
+            <!-- 项目头部信息 -->
+            <header class="project-header">
+                <div class="project-image-container">
+                    <img id="project-image" src="" alt="项目封面" class="project-main-image">
+                </div>
+                <div class="project-info">
+                    <h1 id="project-title">项目标题</h1>
+                    <p id="project-description" class="project-summary">项目简介</p>
+                </div>
+            </header>
+            
+            <!-- 项目详细内容 -->
+            <section class="project-content">
+                <!-- 项目详细内容区域 -->
+                <div class="content-section" id="project-content-area" style="display: none;">
+                    <div id="project-detailed-content">
+                        <!-- 详细内容将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+                
+                <!-- 通用项目信息展示区域 -->
+                <div class="content-section" id="general-info">
+                    <div class="section-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h2>项目信息</h2>
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>开发时间：2023-2024</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>开发者：郭思思</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-code"></i>
+                            <span>技术栈：根据项目而定</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- 图片预览模态框 -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content image-modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="预览图片">
+        </div>
+    </div>
+    
+    <!-- 加载脚本 -->
+    <script src="data.js"></script>
+    <script src="project-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郭思思 - 个人作品展示</title>
+    <meta name="description" content="郭思思的个人作品展示网站，物联网工程专业学生，展示Java、Web开发、物联网等技术项目">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://myworks.guosisi.top/images/logo.ico" type="image/ico">
+    <link rel="alternate icon" href="logo.ico" type="image/ico">
+</head>
+<body>
+    <div class="container">
+        <!-- 个人信息区域 -->
+        <header class="profile-section">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <picture class="avatar">
+                        <img id="avatar-img" src="" alt="个人头像" loading="eager" width="120" height="120" />
+                    </picture>
+                </div>
+                <div class="profile-info">
+                    <h1 id="profile-name">郭思思</h1>
+                    <p class="profile-title">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span id="profile-title-text">物联网工程专业本科生</span>
+                    </p>
+                    <div class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="profile-location-text">徐州，江苏，中国🇨🇳</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 关于我 -->
+            <div class="about-section">
+                <div class="section-header">
+                    <i class="fas fa-user-circle"></i>
+                    <h2>关于我</h2>
+                </div>
+                <p id="profile-description" class="about-text"></p>
+            </div>
+            
+            <!-- 技术栈 -->
+            <div class="tech-section">
+                <div class="section-header">
+                    <i class="fas fa-code"></i>
+                    <h2>技术栈</h2>
+                </div>
+                <div class="tech-stack" id="tech-stack">
+                    <!-- 技术栈标签将通过JavaScript动态生成 -->
+                </div>
+            </div>
+            
+            <!-- 社交媒体 -->
+            <div class="social-section">
+                <div class="section-header">
+                    <i class="fas fa-share-alt"></i>
+                    <h2>社交媒体</h2>
+                </div>
+                <div class="social-links" id="social-links">
+                    <!-- 社交媒体链接将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </header>
+        
+        <!-- 项目展示区域 -->
+        <main class="projects-section">
+            <div class="section-header">
+                <i class="fas fa-folder-open"></i>
+                <h2>我的项目</h2>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- 项目卡片将通过JavaScript动态生成 -->
+            </div>
+        </main>
+    </div>
+    
+    <!-- 微信二维码弹窗 -->
+    <div id="wechat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="wechat-qr-title">关注我的公众号</h3>
+            <div class="qr-code">
+                <img id="wechat-qr-image" src="" alt="微信公众号二维码" style="max-width: 200px; max-height: 200px; border-radius: 8px;" />
+                <p id="wechat-qr-description">扫描二维码关注公众号</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 版权信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">
+                Copyright © 2025 - 2025 郭思思(GuoSisi). All rights reserved. 
+                <a href="terms-of-use.html" class="footer-link">Terms of Use</a> | 
+                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> | 
+                辽ICP备2024033391号
+            </p>
+        </div>
+    </footer>
+    
+    <!-- 加载脚本 -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
