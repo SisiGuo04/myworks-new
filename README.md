@@ -194,7 +194,7 @@ const personalInfo = {
 - 专业：物联网工程
 - GitHub: [@SisiGuo04](https://github.com/SisiGuo04)
 - CSDN: [A_GandS](https://blog.csdn.net/A_GandS)
-- 邮箱: [联系邮箱]
+- 邮箱: [sisiguo.050126@outlook.com]
 
 ## 🤝 贡献指南
 
@@ -210,9 +210,8 @@ const personalInfo = {
 
 如有问题或建议，请通过以下方式联系：
 
-- 📧 邮箱：[你的邮箱]
-- 💬 GitHub Issues：[项目Issues页面]
-- 🐦 社交媒体：[社交媒体链接]
+- 📧 邮箱：[sisiguo.050126@outlook.com]
+- 🐦 社交媒体：[https://myworks.guosisi.top/images/wxOfficialAccount.webp]
 
 ---
 
